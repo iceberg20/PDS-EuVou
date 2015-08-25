@@ -9,7 +9,7 @@
           <small><%= c.data.strftime('%R')%> - <%= c.data.strftime('%d/%m/%Y') %></small>
         </h4>
         <%=c.conteudo %>
-        <%= (link_to 'Apagar', c, method: :delete, data: { confirm: 'Are you sure?' }, remote: true) if current_user == c.user %>
+        <%= (link_to 'Apagar', c, method: :delete, data: { confirm: 'Você está certo disso?' }, remote: true) if current_user == c.user %>
       </div>
     </div>
 <%end%>
